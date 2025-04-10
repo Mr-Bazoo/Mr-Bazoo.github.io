@@ -53,8 +53,17 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+let currentImageIndex = 0;
+const images = Array.from(document.querySelectorAll('.carousel-image')).map(img => img.src);
+
 function showImage(src) {
     document.getElementById('modalImage').src = src;
+    currentImageIndex = images.indexOf(src);
+}
+
+function navigateImage(direction) {
+    currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
+    document.getElementById('modalImage').src = images[currentImageIndex];
 }
 
 // Voeg event listeners toe voor de carousel afbeeldingen
