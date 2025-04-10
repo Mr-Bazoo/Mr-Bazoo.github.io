@@ -1572,6 +1572,61 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
+
+/* Image Gallery Styles */
+.image-gallery {
+    width: 66.67%;
+    margin: 0 auto;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+.modal-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.modal-prev,
+.modal-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 1rem;
+}
+
+.modal-prev {
+    left: 1rem;
+}
+
+.modal-next {
+    right: 1rem;
+}
+
+.modal-prev:hover,
+.modal-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#modalImage {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
 @media (min-width: 1400px) {
   .col-xxl {
     flex: 1 0 0%;

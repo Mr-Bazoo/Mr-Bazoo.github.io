@@ -54,11 +54,17 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 let currentImageIndex = 0;
-const images = Array.from(document.querySelectorAll('.carousel-image')).map(img => img.src);
+const images = [
+    'assets/img/Deel1.png',
+    'assets/img/Deel2.png',
+    'assets/img/Deel3.png',
+    'assets/img/Deel4.png',
+    'assets/img/Deel5.png'
+];
 
-function showImage(src) {
+function showImage(src, index) {
+    currentImageIndex = index;
     document.getElementById('modalImage').src = src;
-    currentImageIndex = images.indexOf(src);
 }
 
 function navigateImage(direction) {
@@ -71,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const carouselImages = document.querySelectorAll('.carousel-image');
     carouselImages.forEach(img => {
         img.addEventListener('click', function() {
-            showImage(this.src);
+            showImage(this.src, images.indexOf(this.src));
         });
     });
 });
