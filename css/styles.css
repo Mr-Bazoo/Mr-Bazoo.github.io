@@ -6704,9 +6704,13 @@ textarea.form-control-lg {
 }
 
 .carousel-image {
-    max-height: auto;
-    width: 768px;
+    max-width: 600px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
     object-fit: contain;
+    margin: 0 auto;
+    display: block;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -7940,11 +7944,6 @@ textarea.form-control-lg {
 .mx-0 {
   margin-right: 0 !important;
   margin-left: 0 !important;
-}
-
-.mx-1 {
-  margin-right: 0.25rem !important;
-  margin-left: 0.25rem !important;
 }
 
 .mx-2 {
