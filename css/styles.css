@@ -6452,8 +6452,8 @@ textarea.form-control-lg {
 }
 
 .carousel-image {
-    max-height: 200px;
-    width: auto;
+    max-height: auto;
+    width: 768px;
     object-fit: contain;
     cursor: pointer;
     transition: transform 0.3s ease;
