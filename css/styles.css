@@ -6448,7 +6448,7 @@ textarea.form-control-lg {
 
 .video-container {
     position: relative;
-    width: 100%;
+    width: 50%;
     padding-bottom: 177.77%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
