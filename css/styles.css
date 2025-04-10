@@ -6452,7 +6452,7 @@ textarea.form-control-lg {
 }
 
 .carousel-image {
-    max-height: 150px;
+    max-height: 200px;
     width: auto;
     object-fit: contain;
     cursor: pointer;
