@@ -6704,10 +6704,10 @@ textarea.form-control-lg {
 }
 
 .carousel-image {
-    max-width: 480px;
-    max-height: 700px;
-    width: 400px;
-    height: 600px;
+    max-width: 50vw;
+    max-height: auto;
+    width: auto;
+    height: auto;
     object-fit: contain;
     margin: 0 auto;
     display: block;
