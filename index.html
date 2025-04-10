@@ -72,19 +72,20 @@
                         <div id="featuredProjectCarousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="img-fluid mb-3 mb-lg-0" src="assets/img/Deel1.png" alt="Afbeelding 1">
+                                    <img class="img-fluid mb-3 mb-lg-0 carousel-image" src="assets/img/Deel1.png" alt="Afbeelding 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="img-fluid mb-3 mb-lg-0" src="assets/img/Deel2.png" alt="Afbeelding 2">
+                                    <img class="img-fluid mb-3 mb-lg-0 carousel-image" src="assets/img/Deel2.png" alt="Afbeelding 2" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="img-fluid mb-3 mb-lg-0" src="assets/img/Deel3.png" alt="Afbeelding 3">
+                                    <img class="img-fluid mb-3 mb-lg-0 carousel-image" src="assets/img/Deel3.png" alt="Afbeelding 3" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="img-fluid mb-3 mb-lg-0" src="assets/img/Deel4.png" alt="Afbeelding 4">
-                                                            </div>
+                                    <img class="img-fluid mb-3 mb-lg-0 carousel-image" src="assets/img/Deel4.png" alt="Afbeelding 4" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
+                                </div>
                                 <div class="carousel-item">
-                                    <img class="img-fluid mb-3 mb-lg-0" src="assets/img/Deel5.png" alt="Afbeelding 5">     
+                                    <img class="img-fluid mb-3 mb-lg-0 carousel-image" src="assets/img/Deel5.png" alt="Afbeelding 5" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
+                                </div>
                             </div>
                             <!-- Carousel Indicators -->
                             <div class="carousel-indicators">
@@ -232,5 +233,18 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- Image Modal -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="modalImage" src="" class="img-fluid" style="max-height: 80vh; width: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

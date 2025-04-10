@@ -52,3 +52,17 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+function showImage(src) {
+    document.getElementById('modalImage').src = src;
+}
+
+// Voeg event listeners toe voor de carousel afbeeldingen
+document.addEventListener('DOMContentLoaded', function() {
+    const carouselImages = document.querySelectorAll('.carousel-image');
+    carouselImages.forEach(img => {
+        img.addEventListener('click', function() {
+            showImage(this.src);
+        });
+    });
+});
