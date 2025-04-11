@@ -1,0 +1,4 @@
+.carousel img {
+    width: 150%; /* Vergroot de breedte met 50% */
+    height: auto; /* Zorg ervoor dat de hoogte proportioneel blijft */
+}
