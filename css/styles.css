@@ -671,7 +671,7 @@ progress {
   }
 }
 .row {
-  --bs-gutter-x: 2.5rem;
+  --bs-gutter-x: 0.5rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
@@ -724,7 +724,7 @@ progress {
 
 .row-cols-6 > * {
   flex: 0 0 auto;
-  width: 16.6666666667%;
+  width: 17.6666666667%;
 }
 
 .col-auto {
@@ -1575,8 +1575,8 @@ progress {
 
 /* Image Gallery Styles */
 .image-gallery {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 45px;
 }
 
 .gallery-image {
