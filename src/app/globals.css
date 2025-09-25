@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--foreground-rgb: 203, 213, 255;
+	--background-rgb: 29, 42, 53;
+}
+
+body {
+	color: rgb(var(--foreground-rgb));
+	background: rgb(var(--background-rgb));
+}
+
+a {
+	text-decoration: underline;
+	text-decoration-style: dashed;
+}
+
+a:hover {
+	text-decoration-style: solid;
+}
+
+.commandWrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.commandPromt {
+	background: transparent;
+	flex-grow: 1;
+	width: 100%;
+}
+
+.commandPromt:focus {
+	outline-width: 0;
+	outline: none;
+}
+
+.prefix {
+	color: rgb(255, 157, 0);
+}
+
+.secondary {
+	color: rgb(5, 206, 145);
+}
+
+.error {
+	color: #f81427;
+}
+
+.asciArt {
+	font-size: 0.75rem;
+}
+
+/*  Hide label for user but not for screenreader*/
+.hiddenLabel {
+	position: absolute;
+	left: -9999px;
+  	width: 1px;
+  	height: 1px;
+  	overflow: hidden;
+  	clip: rect(1px, 1px, 1px, 1px);
+  	white-space: nowrap;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #8d8f91 none;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+	background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #8d8f91;
+	border-radius: 10px;
+	border: none;
+}
