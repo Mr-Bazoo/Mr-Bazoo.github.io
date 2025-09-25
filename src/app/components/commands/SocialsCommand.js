@@ -8,7 +8,7 @@ const SocialsCommand = (props) => {
     useEffect(() => {
         // Toon het bericht en open de link na een korte vertraging (bijvoorbeeld 2 seconden)
         const timer = setTimeout(() => {
-            window.open('https://www.youtube.com/watch?v=xvFZjo5PgG0', '_blank');
+            window.open('https://youtu.be/xvFZjo5PgG0?si=mobile&autoplay=1', '_blank');
         }, 2000);
 
         // Opruimen van de timer wanneer de component wordt ontmanteld
